@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "switzer-regular";
+  src: url(../fonts/Switzer-Regular.woff2);
+}
+@font-face {
+  font-family: "switzer-bold";
+  src: url(../fonts/Switzer-Bold.woff2);
+}
+@font-face {
+  font-family: "switzer-italic";
+  src: url(../fonts/Switzer-Italic.woff);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "switzer-regular", Tahoma, Geneva, Verdana, sans-serif;
+}
+:root {
+  --name: radial-gradient(
+      at 12.301767042399847% 65.33731710444044%,
+      hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 1) 0%,
+      hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 0) 100%
+    ),
+    radial-gradient(
+      at 47.85563595597115% 35.62907383239686%,
+      hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 1) 0%,
+      hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 0) 100%
+    ),
+    radial-gradient(
+      at 91.46883984385492% 32.409980805313296%,
+      hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 1) 0%,
+      hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 0) 100%
+    ),
+    radial-gradient(
+      at 18.63339504714252% 77.76221122671707%,
+      hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 1) 0%,
+      hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 0) 100%
+    ),
+    radial-gradient(
+      at 3.4166047327987448% 32.11962524262473%,
+      hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 1) 0%,
+      hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 0) 100%
+    ),
+    radial-gradient(
+      at 55.60759336707153% 65.42694080448577%,
+      hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 1) 0%,
+      hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 0) 100%
+    ),
+    radial-gradient(
+      at 33.57474344211979% 7.322168691401676%,
+      hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 1) 0%,
+      hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 0) 100%
+    ),
+    radial-gradient(
+      at 86.71115373933999% 83.38445689449576%,
+      hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 1) 0%,
+      hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 0) 100%
+    ),
+    radial-gradient(
+      at 67.3899079219457% 62.43942885056821%,
+      hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 1) 0%,
+      hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 0) 100%
+    ),
+    radial-gradient(
+      at 22.348055684246027% 66.96663521188104%,
+      hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 1) 0%,
+      hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 0) 100%
+    );
+  --bg-color: #121212;
+  --second-bg-color: #202020;
+  --text-color: #ffffff;
+  --main-color: #b68362;
+  --other-color: #8b8a91;
+  --alt-color: #4b4b51;
+  --ann-color: #c7c6d3;
+
+  --h1-font: 6rem;
+  --h2-font: 3.8rem;
+  --p-font: 1.1rem;
+}
+body {
+  overflow-x: hidden;
+  background: var(--bg-color);
+  color: var(--text-color);
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #15151e;
+    animation: animBefore 2.5s ease forwards;
+    animation-delay: 0.15s;
+
+    @keyframes animBefore {
+      to {
+        opacity: 0;
+      }
+    }
+  }
+}
+section {
+  padding: 110px 14% 90px;
+}
+footer {
+  padding: 110px 14% 50px;
+
+  @media screen and (max-width: 1600px) {
+    padding: 110px 5% 50px;
+  }
+  @media screen and (max-width: 655px) {
+    padding: 110px 12% 50px;
+  }
+}
+
+@mixin btn {
+  height: 50px;
+  width: 50px;
+  border: 1px #fff solid;
+  color: #fff;
+  background: transparent;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+@mixin title {
+  font-family: "switzer-bold";
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+@mixin btn-about {
+  display: inline-block;
+  padding: 16px 25px;
+  border: 1px solid var(--alt-color);
+  transition: all 0.7s ease;
+  font-size: 18px;
+  font-weight: 500;
+}
+@mixin bg-repeat {
+  background: -webkit-linear-gradient(135deg, #45c3fe 0%, #6e4ffc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@mixin hline2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  background: transparent;
+  border: 1px solid var(--alt-color);
+  border-radius: 1.7rem;
+  color: var(--ann-color);
+  font-size: 18px;
+  margin-right: 12px;
+  margin-bottom: 40px;
+  transition: all 0.6s ease;
+
+  @media screen and (max-width: 800px) {
+    height: 45px;
+    width: 45px;
+  }
+
+  &:hover {
+    filter: brightness(200%);
+  }
+  &:focus {
+    transform: scale(0.9);
+  }
+}
+@mixin hline {
+  display: inline-block;
+  padding: 10px 14px;
+  margin-right: 10px;
+  background: transparent;
+  border: 1px solid var(--alt-color);
+  font-size: var(--p-font);
+  font-weight: 500;
+  color: var(--ann-color);
+  border-radius: 1.7rem;
+  transition: all 0.6s ease;
+
+  @media screen and (max-width: 800px) {
+    padding: 8px 12px;
+  }
+
+  &:hover {
+    filter: brightness(200%);
+  }
+  &:focus {
+    transform: scale(0.9);
+  }
+}

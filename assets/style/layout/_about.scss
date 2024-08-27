@@ -1,0 +1,335 @@
+main {
+  min-height: 100vh;
+  .section_1 {
+    padding-top: 0;
+    background: var(--bg-color);
+    // background: var(--second-bg-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+    @media screen and (max-width: 1600px) {
+      padding: 20px 5%;
+    }
+    @media screen and (max-width: 1300px) {
+      padding: 20px 1%;
+    }
+    @media screen and (max-width: 1170px) {
+      display: block;
+      padding: 20px 5%;
+      text-align: center;
+    }
+
+    .container-photo {
+      img {
+        width: 100%;
+        height: 700px;
+        max-width: 550px;
+        border-radius: 20%;
+        object-fit: cover;
+        background: radial-gradient(
+            at 12.301767042399847% 65.33731710444044%,
+            hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 1)
+              0%,
+            hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 0)
+              100%
+          ),
+          radial-gradient(
+            at 47.85563595597115% 35.62907383239686%,
+            hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 1)
+              0%,
+            hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 0)
+              100%
+          ),
+          radial-gradient(
+            at 91.46883984385492% 32.409980805313296%,
+            hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 1)
+              0%,
+            hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 0)
+              100%
+          ),
+          radial-gradient(
+            at 18.63339504714252% 77.76221122671707%,
+            hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 1)
+              0%,
+            hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 0)
+              100%
+          ),
+          radial-gradient(
+            at 3.4166047327987448% 32.11962524262473%,
+            hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 1)
+              0%,
+            hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 0)
+              100%
+          ),
+          radial-gradient(
+            at 55.60759336707153% 65.42694080448577%,
+            hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 1)
+              0%,
+            hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 0)
+              100%
+          ),
+          radial-gradient(
+            at 33.57474344211979% 7.322168691401676%,
+            hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 1)
+              0%,
+            hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 0)
+              100%
+          ),
+          radial-gradient(
+            at 86.71115373933999% 83.38445689449576%,
+            hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 1)
+              0%,
+            hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 0)
+              100%
+          ),
+          radial-gradient(
+            at 67.3899079219457% 62.43942885056821%,
+            hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 1)
+              0%,
+            hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 0)
+              100%
+          ),
+          radial-gradient(
+            at 22.348055684246027% 66.96663521188104%,
+            hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 1)
+              0%,
+            hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 0)
+              100%
+          );
+        border: 5px solid #1a3551;
+
+        @media screen and (max-width: 900px) {
+          text-align: center;
+          width: 100%;
+          height: 400px;
+          max-width: 380px;
+          margin: 0 auto;
+        }
+        @media screen and (max-width: 700px) {
+          text-align: center;
+          height: 400px;
+          max-width: 380px;
+          margin: 0 auto;
+        }
+      }
+    }
+    .sec1-text {
+      margin-top: 150px;
+
+      @media screen and (max-width: 1170px) {
+        text-align: left;
+      }
+
+      .h-line {
+        @include hline;
+      }
+
+      .h-line-2 {
+        @include hline2;
+        margin-bottom: 0;
+        height: 48px;
+        width: 48px;
+      }
+      h2 {
+        font-size: var(--h2-font);
+        margin: 22px 0;
+        text-transform: capitalize;
+        @include title;
+
+        @media screen and (max-width: 1300px) {
+          font-size: 3rem;
+        }
+        @media screen and (max-width: 900px) {
+          font-size: 2.8rem;
+        }
+      }
+      h3 {
+        font-size: 1.3rem;
+        font-weight: 500;
+        line-height: 1.7;
+        margin-bottom: 30px;
+        line-height: 30px;
+
+        @media screen and (max-width: 900px) {
+          font-size: 1.2rem;
+        }
+
+        span {
+          @include bg-repeat;
+          font-weight: 900;
+          font-family: "switzer-regular";
+        }
+      }
+      p {
+        font-size: var(--p-font);
+        font-weight: 500;
+        line-height: 33px;
+        color: var(--ann-color);
+        margin-bottom: 35px;
+
+        @media screen and (max-width: 1170px) {
+          width: 90%;
+          font-size: 1rem;
+        }
+      }
+      .container-btn {
+        min-height: 20vh;
+        button {
+          display: flex;
+          display: block;
+          align-items: center;
+          overflow: hidden;
+          text-transform: capitalize;
+          transition: 0.3s ease-in-out;
+
+          &:hover {
+            cursor: pointer;
+            transform: translateY(5px);
+            filter: brightness(125%);
+          }
+        }
+        .btn1 {
+          @include btn-about;
+          border-radius: 17px;
+          margin-right: 20px;
+          color: var(--text-color);
+          background: transparent;
+
+          @media screen and (max-width: 800px) {
+            padding: 14px 21px;
+          }
+        }
+        .btn2 {
+          @include btn-about;
+          border-radius: 17px;
+          color: #fff;
+          background: radial-gradient(
+              at 12.301767042399847% 65.33731710444044%,
+              hsla(
+                  250.75144508670522,
+                  96.64804469273744%,
+                  64.90196078431373%,
+                  1
+                )
+                0%,
+              hsla(
+                  250.75144508670522,
+                  96.64804469273744%,
+                  64.90196078431373%,
+                  0
+                )
+                100%
+            ),
+            radial-gradient(
+              at 47.85563595597115% 35.62907383239686%,
+              hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 1)
+                0%,
+              hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 0)
+                100%
+            ),
+            radial-gradient(
+              at 91.46883984385492% 32.409980805313296%,
+              hsla(
+                  250.75144508670522,
+                  96.64804469273744%,
+                  64.90196078431373%,
+                  1
+                )
+                0%,
+              hsla(
+                  250.75144508670522,
+                  96.64804469273744%,
+                  64.90196078431373%,
+                  0
+                )
+                100%
+            ),
+            radial-gradient(
+              at 18.63339504714252% 77.76221122671707%,
+              hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 1)
+                0%,
+              hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 0)
+                100%
+            ),
+            radial-gradient(
+              at 3.4166047327987448% 32.11962524262473%,
+              hsla(
+                  250.75144508670522,
+                  96.64804469273744%,
+                  64.90196078431373%,
+                  1
+                )
+                0%,
+              hsla(
+                  250.75144508670522,
+                  96.64804469273744%,
+                  64.90196078431373%,
+                  0
+                )
+                100%
+            ),
+            radial-gradient(
+              at 55.60759336707153% 65.42694080448577%,
+              hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 1)
+                0%,
+              hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 0)
+                100%
+            ),
+            radial-gradient(
+              at 33.57474344211979% 7.322168691401676%,
+              hsla(
+                  250.75144508670522,
+                  96.64804469273744%,
+                  64.90196078431373%,
+                  1
+                )
+                0%,
+              hsla(
+                  250.75144508670522,
+                  96.64804469273744%,
+                  64.90196078431373%,
+                  0
+                )
+                100%
+            ),
+            radial-gradient(
+              at 86.71115373933999% 83.38445689449576%,
+              hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 1)
+                0%,
+              hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 0)
+                100%
+            ),
+            radial-gradient(
+              at 67.3899079219457% 62.43942885056821%,
+              hsla(
+                  250.75144508670522,
+                  96.64804469273744%,
+                  64.90196078431373%,
+                  1
+                )
+                0%,
+              hsla(
+                  250.75144508670522,
+                  96.64804469273744%,
+                  64.90196078431373%,
+                  0
+                )
+                100%
+            ),
+            radial-gradient(
+              at 22.348055684246027% 66.96663521188104%,
+              hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 1)
+                0%,
+              hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 0)
+                100%
+            );
+
+          @media screen and (max-width: 800px) {
+            padding: 14px 21px;
+          }
+        }
+      }
+    }
+  }
+}

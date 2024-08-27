@@ -1,0 +1,188 @@
+nav {
+  position: absolute;
+  top: 0px;
+  padding: 20px 14%;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.6s ease;
+  max-height: 18vh;
+
+  @media screen and (max-width: 1380px) {
+    padding: 20px 5%;
+  }
+
+  @media screen and (max-width: 810px) {
+    .menulist {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      padding: 70px 50px;
+      top: 0;
+      right: 0;
+      left: 100%;
+      display: flex;
+      flex-direction: column;
+      background: #000;
+      transition: all 0.6s ease-in-out;
+    }
+  }
+
+  .logo {
+    transform: scale(1.5);
+    max-width: 80px;
+    object-fit: contain;
+    margin-top: 65px;
+
+    @media screen and (max-width: 1380px) {
+      transform: scale(1);
+      margin-top: 55px;
+    }
+  }
+  ul {
+    .active {
+      color: var(--text-color);
+      
+    }
+    a {
+      text-transform: capitalize;
+      display: inline-block;
+      font-size: 20px;
+      font-weight: 300;
+      color: var(--other-color);
+      margin: 0 30px;
+      transition: all 0.6s ease-in-out;
+      font-family: "switzer-regular";
+
+      @media screen and (max-width: 1380px) {
+        font-size: 1rem;
+      }
+
+      &:hover {
+        filter: brightness(200%);
+        transform: translateY(3px);
+      }
+    }
+  }
+  .menu_right {
+    display: flex;
+    align-items: center;
+
+    .menu_btn {
+      display: inline-block;
+      padding: 15px 25px;
+      background: -webkit-linear-gradient(135deg, #45c3fe 0%, #6e4ffc 100%);
+      color: var(--bg-color);
+      font-size: 20px;
+      font-weight: 500;
+      border-radius: 13px;
+    }
+  }
+  .bx {
+    font-family: boxicons !important;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    display: inline-block;
+    text-transform: none;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+  }
+  #menu-icon {
+    z-index: 10001;
+    font-size: 40px;
+    margin-left: 25px;
+    cursor: pointer;
+    visibility: hidden;
+
+    @media screen and (max-width: 810px) {
+      visibility: initial;
+    }
+
+    &::before {
+      content: "\eb5f";
+    }
+  }
+}
+
+header {
+  position: relative;
+  min-height: 100vh;
+  box-shadow: black;
+
+  .bg-video {
+    position: absolute;
+
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    display: block;
+
+    //  bg video non adapter au web donc si tu change la video tu devras surement refaire les tailles de la video
+  }
+
+  .header-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+
+    h1 {
+      @include title;
+      margin-top: 240px;
+      font-size: 4.5rem;
+
+      @media screen and (max-width: 810px) {
+        font-size: 3.5rem;
+      }
+      @media screen and (max-width: 610px) {
+        font-size: 2.5rem;
+      }
+    }
+    h2 {
+      font-family: "switzer-regular";
+      text-transform: uppercase;
+
+      @media screen and (max-width: 810px) {
+        font-size: 1.3rem;
+      }
+      @media screen and (max-width: 610px) {
+        font-size: 1rem;
+      }
+    }
+    span {
+      z-index: 10;
+      margin-top: 130px;
+      transition: 0.5s;
+
+      &:hover {
+        transform: scale(1.17);
+      }
+
+      a {
+        border: #fff 1px solid;
+        color: #fff;
+        font-weight: 100;
+        @include hline2;
+      }
+    }
+  }
+  .box-shadow {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    margin-top: -78px;
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(to bottom, #1a191d00, #121212);
+    // background-image: linear-gradient(to bottom, #1a191d00, #202020);
+  }
+}
+
