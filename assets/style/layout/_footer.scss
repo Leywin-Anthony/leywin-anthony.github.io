@@ -1,5 +1,5 @@
 footer {
-    // background: #202020;
+  // background: #202020;
   .top_footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -10,7 +10,6 @@ footer {
     }
 
     .foot_left {
-    
       .h-line {
         @include hline;
       }
@@ -53,7 +52,6 @@ footer {
     }
   }
 
-
   .mid-footer {
     padding-bottom: 8vh;
     position: relative;
@@ -70,11 +68,8 @@ footer {
       }
       @media screen and (max-width: 655px) {
         grid-template-columns: repeat(1, 1fr);
-
       }
 
-      
-      
       a {
         padding: 14px 0;
         display: flex;
@@ -88,15 +83,12 @@ footer {
         position: relative;
         overflow: hidden;
         transition: all 0.7s ease;
-        
+
         &:hover {
           transform: scale(0.95);
+          filter: brightness(1.75);
         }
-        img{
-          width: 42px;
-        }
-
-        &::after{
+        &::after {
           position: absolute;
           top: 0;
           left: 0;
@@ -105,14 +97,21 @@ footer {
           transform: translateY(-101%);
           content: "";
           background-color: #14cf93;
-          transition: .2s;
+          transition: 0.2s;
           z-index: -1;
+        }
+        h3 {
+          font-weight: 500;
+        }
+        h5 {
+          font-weight: 400;
+          color: rgb(150, 150, 150);
+          margin-top: 1px;
         }
       }
     }
   }
   .bottom_footer {
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -134,7 +133,7 @@ footer {
       font-size: 22px;
       transition: all 0.7s ease;
 
-      &:hover{
+      &:hover {
         transform: scale(1.1) translateY(-5px);
       }
     }

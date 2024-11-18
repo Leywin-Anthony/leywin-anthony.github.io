@@ -130,6 +130,11 @@ main {
         margin-bottom: 0;
         height: 48px;
         width: 48px;
+
+        &:hover {
+          transform: translateY(3px);
+          filter: brightness(175%);
+        }
       }
       h2 {
         font-size: var(--h2-font);

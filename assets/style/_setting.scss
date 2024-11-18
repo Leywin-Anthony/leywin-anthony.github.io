@@ -19,6 +19,7 @@
   list-style: none;
   scroll-behavior: smooth;
   font-family: "switzer-regular", Tahoma, Geneva, Verdana, sans-serif;
+  color-scheme: dark;
 }
 :root {
   --name: radial-gradient(
@@ -96,7 +97,7 @@ body {
     top: 0;
     left: 0;
     background: #15151e;
-    animation: animBefore 2.5s ease forwards;
+    animation: animBefore 3.5s ease forwards;
     animation-delay: 0.15s;
 
     @keyframes animBefore {
