@@ -132,6 +132,79 @@ footer {
   }
 }
 
+#nav {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 100;
+  min-height: 5vh;
+  bottom: 1rem;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.nav_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 6.5vh;
+  border-radius: 25px;
+  background: rgb(26, 35, 51);
+}
+
+ul .active {
+  color: var(--text-color);
+}
+ul a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.25rem;
+  padding: 0.4rem;
+  color: var(--other-color);
+  margin: 0 15px;
+  border-radius: 5rem;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+@media screen and (max-width: 1380px) {
+  ul a {
+    font-size: 1rem;
+  }
+}
+ul a:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  color: hsl(250, 48%, 64%);
+}
+
+.activeLink {
+  background: -webkit-linear-gradient(135deg, #45c3fe 0%, #6e4ffc 100%);
+  opacity: 0.8;
+  -webkit-box-shadow: 1px 1px 19px hsla(250, 66%, 75%, 0.4);
+          box-shadow: 1px 1px 19px hsla(250, 66%, 75%, 0.4);
+  border-radius: 5rem;
+  color: hsl(219, 15%, 95%);
+}
+
 nav {
   position: absolute;
   top: 0px;
@@ -156,31 +229,7 @@ nav {
     padding: 20px 5%;
   }
 }
-@media screen and (max-width: 810px) {
-  nav .menulist {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    padding: 70px 50px;
-    top: 0;
-    right: 0;
-    left: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background: #000;
-    -webkit-transition: all 0.6s ease-in-out;
-    transition: all 0.6s ease-in-out;
-  }
-}
 nav .logo {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  max-width: 80px;
   -o-object-fit: contain;
      object-fit: contain;
   margin-top: 65px;
@@ -192,75 +241,6 @@ nav .logo {
     margin-top: 55px;
   }
 }
-nav ul .active {
-  color: var(--text-color);
-}
-nav ul a {
-  text-transform: capitalize;
-  display: inline-block;
-  font-size: 20px;
-  font-weight: 300;
-  color: var(--other-color);
-  margin: 0 30px;
-  -webkit-transition: all 0.6s ease-in-out;
-  transition: all 0.6s ease-in-out;
-  font-family: "switzer-regular";
-}
-@media screen and (max-width: 1380px) {
-  nav ul a {
-    font-size: 1rem;
-  }
-}
-nav ul a:hover {
-  -webkit-filter: brightness(200%);
-          filter: brightness(200%);
-  -webkit-transform: translateY(3px);
-          transform: translateY(3px);
-}
-nav .menu_right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-nav .menu_right .menu_btn {
-  display: inline-block;
-  padding: 15px 25px;
-  background: -webkit-linear-gradient(135deg, #45c3fe 0%, #6e4ffc 100%);
-  color: var(--bg-color);
-  font-size: 20px;
-  font-weight: 500;
-  border-radius: 13px;
-}
-nav .bx {
-  font-family: boxicons !important;
-  font-weight: 400;
-  font-style: normal;
-  font-variant: normal;
-  line-height: 1;
-  text-rendering: auto;
-  display: inline-block;
-  text-transform: none;
-  speak: none;
-  -webkit-font-smoothing: antialiased;
-}
-nav #menu-icon {
-  z-index: 10001;
-  font-size: 40px;
-  margin-left: 25px;
-  cursor: pointer;
-  visibility: hidden;
-}
-@media screen and (max-width: 810px) {
-  nav #menu-icon {
-    visibility: initial;
-  }
-}
-nav #menu-icon::before {
-  content: "\eb5f";
-}
 
 header {
   position: relative;
@@ -270,13 +250,13 @@ header {
 }
 header .bg-video {
   position: absolute;
-  right: 0;
-  width: 100%;
-  height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: -1;
   display: block;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  right: 0;
 }
 header .header-text {
   display: -webkit-box;
@@ -463,6 +443,7 @@ main .section_1 .sec1-text .h-line {
   border-radius: 1.7rem;
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
+  pointer-events: none;
 }
 @media screen and (max-width: 800px) {
   main .section_1 .sec1-text .h-line {
@@ -470,8 +451,8 @@ main .section_1 .sec1-text .h-line {
   }
 }
 main .section_1 .sec1-text .h-line:hover {
-  -webkit-filter: brightness(200%);
-          filter: brightness(200%);
+  -webkit-filter: brightness(250%);
+          filter: brightness(250%);
 }
 main .section_1 .sec1-text .h-line:focus {
   -webkit-transform: scale(0.9);
@@ -1073,6 +1054,7 @@ main .section_1 .sec1-text .container-btn .btn2 {
   border-radius: 1.7rem;
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
+  pointer-events: none;
 }
 @media screen and (max-width: 800px) {
   .section_4 .title_section4 .h-line {
@@ -1080,8 +1062,8 @@ main .section_1 .sec1-text .container-btn .btn2 {
   }
 }
 .section_4 .title_section4 .h-line:hover {
-  -webkit-filter: brightness(200%);
-          filter: brightness(200%);
+  -webkit-filter: brightness(250%);
+          filter: brightness(250%);
 }
 .section_4 .title_section4 .h-line:focus {
   -webkit-transform: scale(0.9);
@@ -1234,6 +1216,7 @@ footer .top_footer .foot_left .h-line {
   border-radius: 1.7rem;
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
+  pointer-events: none;
 }
 @media screen and (max-width: 800px) {
   footer .top_footer .foot_left .h-line {
@@ -1241,8 +1224,8 @@ footer .top_footer .foot_left .h-line {
   }
 }
 footer .top_footer .foot_left .h-line:hover {
-  -webkit-filter: brightness(200%);
-          filter: brightness(200%);
+  -webkit-filter: brightness(250%);
+          filter: brightness(250%);
 }
 footer .top_footer .foot_left .h-line:focus {
   -webkit-transform: scale(0.9);

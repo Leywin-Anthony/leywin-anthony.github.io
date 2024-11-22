@@ -21,32 +21,54 @@
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
-
     <meta
       name="description"
       content="Étudiant en développement web avec une expertise en front-end et des bases en QA. Découvrez mon portfolio où je présente mes projets et compétences. Actuellement à la recherche d'une alternance pour enrichir mon expérience professionnelle."
     />
-    <script src="/index.js"></script>
+    <script src="/index.js" defer></script>
   </head>
 
   <!-- Fin du head  -->
 
   <body>
+    <div class="nav_container" id="nav">
+      <ul class="nav_list">
+        <li class="nav_item">
+          <a href="#home" class="nav__link">
+            <i class="bx bx-home"></i>
+          </a>
+        </li>
+        <li class="nav_item">
+          <a href="#about" class="nav_link">
+            <i class="bx bx-user"></i>
+          </a>
+        </li>
+
+        <li class="nav_item">
+          <a href="#book" class="nav_link">
+            <i class="bx bx-book"></i>
+          </a>
+        </li>
+
+        <li class="nav_item">
+          <a href="#portfolio" class="nav_link">
+            <i class="bx bx-briefcase-alt-2"></i>
+          </a>
+        </li>
+
+        <li class="nav_item">
+          <a href="#contact" class="nav_link">
+            <i class="bx bx-message-square-dots"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
     <nav class="stiky" id="navbar">
       <a href="" class="logo" id="logo">
         <img src="./assets/style/img/vectorized_image.svg" alt="" />
       </a>
-      <ul class="menulist">
-        <a href="#home" class="active">home</a>
-        <a href="#main">about</a>
-        <a href="#project">projets</a>
-        <a href="#contact">contact</a>
-        <a href="/assets/style/file/Cv anthony.pdf" download="Cv anthony.pdf"
-          >resume</a
-        >
-      </ul>
-      <div class="bx bx-menu" id="menu-icon"></div>
     </nav>
+
     <header id="home">
       <video autoplay loop muted play-inline class="bg-video">
         <source
@@ -57,7 +79,7 @@
         <h1>anthony Leywin</h1>
         <h2>student & front-end developer</h2>
         <span>
-          <a href="#main"><i class="fa-solid fa-arrow-down"></i></a>
+          <a href="#about"><i class="fa-solid fa-arrow-down"></i></a>
         </span>
       </div>
       <div class="box-shadow"></div>
@@ -65,14 +87,14 @@
     <main>
       <!-- about me -->
 
-      <section class="section_1">
+      <section class="section_1" id="about">
         <div class="container-photo">
           <div class="block-photo">
             <img src="/assets/style/img/me.webp" alt="photo d'anthony leywin" />
           </div>
         </div>
         <div class="sec1-text">
-          <a href="#" class="h-line" id="main">
+          <a href="#" class="h-line">
             <i class="ri-shining-2-line"></i>
             <span>About</span>
           </a>
@@ -184,7 +206,7 @@
 
       <!-- job experience  -->
 
-      <section class="section_3">
+      <section class="section_3" id="book">
         <div class="header-experience">
           <h2>
             <span><i class="fa-solid fa-book"></i></span> Mes expériences
@@ -202,13 +224,13 @@
           <div class="container">
             <div class="top-block">
               <p>2023 & 2024</p>
-              <a href="rien">
+              <a href="https://www.etam.com/" target="_blank">
                 <span>Stage</span>
               </a>
             </div>
             <div class="mid-block">
               <h3>Developer front-end & QA</h3>
-              <h4>@Etam</h4>
+              <a href="https://www.etam.com/" target="_blank"><h4>@Etam</h4></a>
               <p>
                 Pendant ces stages, j'ai conçu et optimisé des interfaces web
                 réactives en HTML et CSS. J'ai également joué un rôle dans
@@ -221,13 +243,15 @@
           <div class="container">
             <div class="top-block">
               <p>2023</p>
-              <a href="rien">
+              <a href="https://www.jobteaser.com/fr" target="_blank">
                 <span>Stage</span>
               </a>
             </div>
             <div class="mid-block">
               <h3>Developer front-end</h3>
-              <h4>@Jobteaser</h4>
+              <a href="https://www.jobteaser.com/fr" target="_blank"
+                ><h4>@jobteaser</h4></a
+              >
               <p>
                 Pendant ce stage, j'ai beaucoup travaillé en JavaScript,
                 notamment en intégrant des API pour améliorer les
@@ -240,13 +264,17 @@
           <div class="container">
             <div class="top-block">
               <p>2024</p>
-              <a href="rien">
+              <a href="https://alexandra-bento.com/" target="_blank">
                 <span>Stage</span>
               </a>
             </div>
             <div class="mid-block">
               <h3>Developer front-end</h3>
-              <h4>@Aura</h4>
+              <h4>
+                <a href="https://alexandra-bento.com/" target="_blank"
+                  ><h4>@aura</h4></a
+                >
+              </h4>
               <p>
                 Pendant ce stage, j'ai travaillé sur le développement front-end
                 en HTML et j'ai appris à utiliser SCSS pour gérer les styles de
@@ -260,9 +288,9 @@
 
       <!-- project  -->
 
-      <section class="section_4">
+      <section class="section_4" id="portfolio">
         <div class="title_section4">
-          <a href="#" class="h-line" id="project">
+          <a href="" class="h-line">
             <i class="ri-shining-2-line"></i>
             <span>Portfolio</span>
           </a>
