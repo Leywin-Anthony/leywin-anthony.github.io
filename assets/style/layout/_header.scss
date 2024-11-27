@@ -1,3 +1,4 @@
+// ackground-color: hsl(var(--second-hue), 28%, 16%, 0.7);
 #nav {
   position: fixed;
   display: flex;
@@ -10,6 +11,12 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease-in-out;
+  /* Styles par défaut */
+  /* Styles lorsque l'élément doit être visible */
+  // #nav.visible {
+  //   visibility: visible;
+  //   opacity: 1;
+  // }
 }
 
 .nav_list {

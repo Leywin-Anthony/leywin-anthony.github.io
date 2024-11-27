@@ -105,15 +105,94 @@
           border-radius: 1.7rem;
           font-size: 22px;
           transition: all 0.7s ease;
+          cursor: pointer;
 
           &:hover {
             transform: scale(1.1) translate3d(11px, 0px, 0px);
           }
 
-          a {
-            color: var(--bg-color);
+          span {
+            color: hsl(219, 48%, 8%);
           }
         }
+      }
+      .services__modal {
+        position: fixed;
+        inset: 0;
+        background-color: hsl(219, 28%, 16%, 0.7);
+        padding: 2rem 1rem;
+        display: grid;
+        place-items: center;
+        transition: 0.5s ease-out;
+        z-index: 1000;
+        visibility: hidden;
+        opacity: 0;
+      }
+
+      .services__modal-content {
+        background-color: hsl(219, 48%, 8%);
+        padding: 4.5rem 1.5rem 2.5rem;
+        border-radius: 1.5rem;
+        position: relative;
+      }
+
+      .services__modal-title,
+      .services__modal-description {
+        text-align: center;
+      }
+
+      .services__modal-title {
+        font-size: 1.25rem;
+        color: hsl(250, 66%, 75%);
+        margin-bottom: 1rem;
+      }
+
+      .services__modal-description {
+        font-size: 0.875rem;
+        margin-bottom: 2rem;
+      }
+
+      .services__modal-list {
+        display: grid;
+        row-gap: 0.75rem;
+      }
+
+      .services__modal-item {
+        display: flex;
+        align-items: flex-start;
+        column-gap: 0.5rem;
+      }
+
+      .services__modal-icon {
+        font-size: 1.5rem;
+        color: hsl(250, 66%, 75%);
+      }
+
+      .services__modal-info {
+        font-size: 0.875rem;
+      }
+
+      .bc {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        color: hsl(250, 66%, 75%);
+        cursor: pointer;
+        font-size: 0.9rem;
+      }
+      .services__modal-close {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        font-size: 1.5rem;
+        color: hsl(250, 66%, 75%);
+        cursor: pointer;
+      }
+      /*Active modal*/
+
+      .active-modal {
+        visibility: visible;
+        opacity: 1;
       }
     }
   }
