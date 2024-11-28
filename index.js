@@ -5,12 +5,19 @@ window.addEventListener("scroll", () => {
   let scrollValue =
     (window.scrollY + window.innerHeight) / document.body.offsetHeight;
 
-  if (scrollValue > 0.34) {
-    nav.style.visibility = "visible";
-    nav.style.opacity = "1";
-  } else {
+  if (window.innerWidth < 700) {
+    // Si la largeur de l'écran est inférieure à 700px, masquer la barre
     nav.style.visibility = "hidden";
     nav.style.opacity = "0";
+  } else {
+    // Sinon, gérer la visibilité en fonction du défilement
+    if (scrollValue < 0.3 || scrollValue > 0.98) {
+      nav.style.visibility = "hidden";
+      nav.style.opacity = "0";
+    } else {
+      nav.style.visibility = "visible";
+      nav.style.opacity = "1";
+    }
   }
 
   // Supprimer la classe activeLink de tous les liens
@@ -54,7 +61,7 @@ window.addEventListener("scroll", () => {
     if (
       link.getAttribute("href") === "#home" &&
       scrollValue > 0 &&
-      scrollValue <= 0.34
+      scrollValue <= 0.31
     ) {
       link.classList.add("activeLink");
     } else if (

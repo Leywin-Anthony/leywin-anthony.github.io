@@ -17,9 +17,19 @@ footer {
         margin: 32px 0;
         font-size: var(--h2-font);
         @include title;
+        letter-spacing: normal;
 
-        @media screen and (max-width: 1255px) {
-          font-size: 3rem;
+        @media screen and (max-width: 1380px) {
+          font-size: 3.3rem;
+        }
+        @media screen and (max-width: 1200px) {
+          font-size: 2.8rem;
+        }
+        @media screen and (max-width: 1000px) {
+          font-size: 2.8rem;
+        }
+        @media screen and (max-width: 620px) {
+          font-size: 2.1rem;
         }
 
         span {

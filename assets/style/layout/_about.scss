@@ -23,102 +23,84 @@ main {
     .container-photo {
       img {
         width: 100%;
-        height: 700px;
-        max-width: 550px;
+        height: auto; // Permet une hauteur proportionnelle pour maintenir les ratios
+        max-width: 550px; // Limite la largeur de l'image pour les écrans larges
         border-radius: 20%;
         object-fit: cover;
-        background: radial-gradient(
-            at 12.301767042399847% 65.33731710444044%,
-            hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 1)
-              0%,
-            hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 0)
-              100%
-          ),
-          radial-gradient(
-            at 47.85563595597115% 35.62907383239686%,
-            hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 1)
-              0%,
-            hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 0)
-              100%
-          ),
-          radial-gradient(
-            at 91.46883984385492% 32.409980805313296%,
-            hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 1)
-              0%,
-            hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 0)
-              100%
-          ),
-          radial-gradient(
-            at 18.63339504714252% 77.76221122671707%,
-            hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 1)
-              0%,
-            hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 0)
-              100%
-          ),
-          radial-gradient(
-            at 3.4166047327987448% 32.11962524262473%,
-            hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 1)
-              0%,
-            hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 0)
-              100%
-          ),
-          radial-gradient(
-            at 55.60759336707153% 65.42694080448577%,
-            hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 1)
-              0%,
-            hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 0)
-              100%
-          ),
-          radial-gradient(
-            at 33.57474344211979% 7.322168691401676%,
-            hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 1)
-              0%,
-            hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 0)
-              100%
-          ),
-          radial-gradient(
-            at 86.71115373933999% 83.38445689449576%,
-            hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 1)
-              0%,
-            hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 0)
-              100%
-          ),
-          radial-gradient(
-            at 67.3899079219457% 62.43942885056821%,
-            hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 1)
-              0%,
-            hsla(250.75144508670522, 96.64804469273744%, 64.90196078431373%, 0)
-              100%
-          ),
-          radial-gradient(
-            at 22.348055684246027% 66.96663521188104%,
-            hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 1)
-              0%,
-            hsla(162.8108108108108, 98.93048128342247%, 63.33333333333333%, 0)
-              100%
-          );
         border: 5px solid #1c2452;
+        background: radial-gradient(
+            at 12.3% 65.3%,
+            hsla(250, 96%, 64%, 1) 0%,
+            hsla(250, 96%, 64%, 0) 100%
+          ),
+          radial-gradient(
+            at 47.8% 35.6%,
+            hsla(162, 98%, 63%, 1) 0%,
+            hsla(162, 98%, 63%, 0) 100%
+          ),
+          radial-gradient(
+            at 91.4% 32.4%,
+            hsla(250, 96%, 64%, 1) 0%,
+            hsla(250, 96%, 64%, 0) 100%
+          ),
+          radial-gradient(
+            at 18.6% 77.7%,
+            hsla(162, 98%, 63%, 1) 0%,
+            hsla(162, 98%, 63%, 0) 100%
+          ),
+          radial-gradient(
+            at 3.4% 32.1%,
+            hsla(250, 96%, 64%, 1) 0%,
+            hsla(250, 96%, 64%, 0) 100%
+          ),
+          radial-gradient(
+            at 55.6% 65.4%,
+            hsla(162, 98%, 63%, 1) 0%,
+            hsla(162, 98%, 63%, 0) 100%
+          ),
+          radial-gradient(
+            at 33.5% 7.3%,
+            hsla(250, 96%, 64%, 1) 0%,
+            hsla(250, 96%, 64%, 0) 100%
+          ),
+          radial-gradient(
+            at 86.7% 83.3%,
+            hsla(162, 98%, 63%, 1) 0%,
+            hsla(162, 98%, 63%, 0) 100%
+          ),
+          radial-gradient(
+            at 67.3% 62.4%,
+            hsla(250, 96%, 64%, 1) 0%,
+            hsla(250, 96%, 64%, 0) 100%
+          ),
+          radial-gradient(
+            at 22.3% 66.9%,
+            hsla(162, 98%, 63%, 1) 0%,
+            hsla(162, 98%, 63%, 0) 100%
+          );
 
-        @media screen and (max-width: 900px) {
-          text-align: center;
-          width: 100%;
-          height: 400px;
-          max-width: 380px;
-          margin: 0 auto;
+        // Media queries pour la responsivité
+        @media screen and (max-width: 1170px) {
+          max-width: 450px; // Réduit la largeur maximale pour les écrans intermédiaires
         }
+
+        @media screen and (max-width: 768px) {
+          max-width: 300px; // Réduction encore plus pour les tablettes
+          border-radius: 15%; // Ajuste les bords arrondis pour un aspect plus compact
+        }
+
         @media screen and (max-width: 700px) {
-          text-align: center;
-          height: 400px;
-          max-width: 380px;
-          margin: 0 auto;
+          display: none;
         }
       }
     }
+
     .sec1-text {
       margin-top: 150px;
 
       @media screen and (max-width: 1170px) {
         text-align: left;
+        margin-top: 120px;
       }
 
       .h-line {
@@ -169,13 +151,14 @@ main {
       p {
         font-size: var(--p-font);
         font-weight: 500;
-        line-height: 33px;
+        line-height: 30px;
         color: var(--ann-color);
         margin-bottom: 35px;
 
         @media screen and (max-width: 1170px) {
           width: 90%;
           font-size: 1rem;
+          line-height: 27px;
         }
       }
       .container-btn {
