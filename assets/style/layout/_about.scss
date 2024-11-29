@@ -141,6 +141,9 @@ main {
         @media screen and (max-width: 900px) {
           font-size: 1.2rem;
         }
+        @media screen and (max-width: 500px) {
+          font-size: 1.1rem;
+        }
 
         span {
           @include bg-repeat;
@@ -159,6 +162,9 @@ main {
           width: 90%;
           font-size: 1rem;
           line-height: 27px;
+        }
+        @media screen and (max-width: 550px) {
+          line-height: 24px;
         }
       }
       .container-btn {
