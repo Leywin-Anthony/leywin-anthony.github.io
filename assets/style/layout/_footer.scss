@@ -1,5 +1,6 @@
 footer {
   // background: #202020;
+
   .top_footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -130,6 +131,10 @@ footer {
       font-size: 15px;
       font-weight: 400;
       color: var(--ann-color);
+
+      @media screen and (max-width: 550px) {
+        font-size: 13px;
+      }
     }
     .scroll-top {
       display: inline-flex;

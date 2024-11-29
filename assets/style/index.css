@@ -131,6 +131,11 @@ footer {
     padding: 110px 12% 50px;
   }
 }
+@media screen and (max-width: 550px) {
+  footer {
+    padding: 110px 5% 50px;
+  }
+}
 
 #nav {
   position: fixed;
@@ -1223,7 +1228,7 @@ main .section_1 .sec1-text .container-btn .btn2 {
 }
 .section_4 .part_container .conainer .services__modal-title {
   font-size: 1.25rem;
-  color: hsl(250, 66%, 75%);
+  color: #695bfc;
   margin-bottom: 1rem;
 }
 .section_4 .part_container .conainer .services__modal-description {
@@ -1247,7 +1252,7 @@ main .section_1 .sec1-text .container-btn .btn2 {
 }
 .section_4 .part_container .conainer .services__modal-icon {
   font-size: 1.5rem;
-  color: hsl(250, 66%, 75%);
+  color: #695bfc;
 }
 .section_4 .part_container .conainer .services__modal-info {
   font-size: 0.875rem;
@@ -1256,7 +1261,7 @@ main .section_1 .sec1-text .container-btn .btn2 {
   position: absolute;
   top: 1.5rem;
   left: 1.5rem;
-  color: hsl(250, 66%, 75%);
+  color: #695bfc;
   cursor: pointer;
   font-size: 0.9rem;
 }
@@ -1265,7 +1270,7 @@ main .section_1 .sec1-text .container-btn .btn2 {
   top: 1.5rem;
   right: 1.5rem;
   font-size: 1.5rem;
-  color: hsl(250, 66%, 75%);
+  color: #695bfc;
   cursor: pointer;
 }
 .section_4 .part_container .conainer .active-modal {
@@ -1486,6 +1491,11 @@ footer .bottom_footer .copyright {
   font-size: 15px;
   font-weight: 400;
   color: var(--ann-color);
+}
+@media screen and (max-width: 550px) {
+  footer .bottom_footer .copyright {
+    font-size: 13px;
+  }
 }
 footer .bottom_footer .scroll-top {
   display: -webkit-inline-box;

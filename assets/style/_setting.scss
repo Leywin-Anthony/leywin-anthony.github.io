@@ -19,6 +19,7 @@
   list-style: none;
   scroll-behavior: smooth;
   font-family: "switzer-regular", Tahoma, Geneva, Verdana, sans-serif;
+  // font-family: "sarada";
   color-scheme: dark;
 }
 :root {
@@ -117,6 +118,9 @@ footer {
   }
   @media screen and (max-width: 655px) {
     padding: 110px 12% 50px;
+  }
+  @media screen and (max-width: 550px) {
+    padding: 110px 5% 50px;
   }
 }
 
