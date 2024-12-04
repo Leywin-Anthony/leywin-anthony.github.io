@@ -149,6 +149,11 @@ footer {
   transition: all 0.7s ease;
   font-size: 18px;
   font-weight: 500;
+
+  @media screen and (max-width: 500px) {
+    font-size: 15px;
+    padding: 13px 22px;
+  }
 }
 @mixin bg-repeat {
   background: -webkit-linear-gradient(135deg, #45c3fe 0%, #6e4ffc 100%);
@@ -173,6 +178,11 @@ footer {
   @media screen and (max-width: 800px) {
     height: 45px;
     width: 45px;
+  }
+  @media screen and (max-width: 500px) {
+    height: 40px;
+    width: 40px;
+    font-size: 15px;
   }
 
   &:hover {
