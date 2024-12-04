@@ -674,7 +674,7 @@ main .section_1 .sec1-text .container-btn .btn2 {
 }
 @media screen and (max-width: 600px) {
   .section_2 .title-expert h2 {
-    font-size: 2.5rem;
+    font-size: 1.6rem;
   }
 }
 .section_2 .title-expert h2 span {
@@ -849,7 +849,7 @@ main .section_1 .sec1-text .container-btn .btn2 {
 }
 @media screen and (max-width: 500px) {
   .title-section h2 {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
   }
 }
 .title-section h2 span {
