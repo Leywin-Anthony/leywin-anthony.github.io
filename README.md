@@ -3,7 +3,6 @@
 ensuite adapte le css a tes gouts
 
 --relecture
---responsive
 
 ortus
 la montagne
