@@ -19,42 +19,6 @@ window.addEventListener("scroll", () => {
       nav.style.opacity = "1";
     }
   }
-
-  // Supprimer la classe activeLink de tous les liens
-  //   navLinks.forEach((link) => {
-  //     link.classList.remove("activeLink");
-  //   });
-
-  //   navLinks.forEach((link) => {
-  //     if (
-  //       link.getAttribute("href") === "#home" &&
-  //       scrollValue > 0 &&
-  //       scrollValue <= 0.34
-  //     ) {
-  //       link.classList.add("activeLink");
-  //     } else if (
-  //       link.getAttribute("href") === "#about" &&
-  //       scrollValue > 0.34 &&
-  //       scrollValue <= 0.6
-  //     ) {
-  //       link.classList.add("activeLink");
-  //     } else if (
-  //       link.getAttribute("href") === "#book" &&
-  //       scrollValue > 0.6 &&
-  //       scrollValue <= 0.75
-  //     ) {
-  //       link.classList.add("activeLink");
-  //     } else if (
-  //       link.getAttribute("href") === "#portfolio" &&
-  //       scrollValue > 0.75 &&
-  //       scrollValue <= 0.95
-  //     ) {
-  //       link.classList.add("activeLink");
-  //     } else if (link.getAttribute("href") === "#contact" && scrollValue > 0.95) {
-  //       link.classList.add("activeLink");
-  //     }
-  //   });
-  // });
   navLinks.forEach((link) => {
     link.classList.remove("activeLink");
 
@@ -95,7 +59,6 @@ const modalViews = document.querySelectorAll(".services__modal"),
   modalClose = document.querySelectorAll(".services__modal-close");
 modalImgs = document.querySelectorAll(".services_img");
 
-// When the user clicks on the button, open the modal
 let modal = function (modalClick) {
   modalViews[modalClick].classList.add("active-modal");
 };
