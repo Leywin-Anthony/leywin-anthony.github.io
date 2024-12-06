@@ -11,7 +11,7 @@ window.addEventListener("scroll", () => {
     nav.style.opacity = "0";
   } else {
     // Sinon, gérer la visibilité en fonction du défilement
-    if (scrollValue < 0.3 || scrollValue > 0.98) {
+    if (scrollValue < 0.32 || scrollValue > 0.98) {
       nav.style.visibility = "hidden";
       nav.style.opacity = "0";
     } else {
@@ -25,18 +25,18 @@ window.addEventListener("scroll", () => {
     if (
       link.getAttribute("href") === "#home" &&
       scrollValue > 0 &&
-      scrollValue <= 0.31
+      scrollValue <= 0.32
     ) {
       link.classList.add("activeLink");
     } else if (
       link.getAttribute("href") === "#about" &&
-      scrollValue > 0.34 &&
+      scrollValue > 0.32 &&
       scrollValue <= 0.6
     ) {
       link.classList.add("activeLink");
     } else if (
       link.getAttribute("href") === "#book" &&
-      scrollValue > 0.6 &&
+      scrollValue > 0 &&
       scrollValue <= 0.75
     ) {
       link.classList.add("activeLink");

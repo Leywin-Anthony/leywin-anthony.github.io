@@ -1170,22 +1170,22 @@ footer .top_footer .foot_left h2 {
 }
 @media screen and (max-width: 1380px) {
   footer .top_footer .foot_left h2 {
-    font-size: 3.3rem;
+    font-size: 3.2rem;
   }
 }
 @media screen and (max-width: 1200px) {
   footer .top_footer .foot_left h2 {
-    font-size: 2.8rem;
+    font-size: 2.7rem;
   }
 }
 @media screen and (max-width: 1000px) {
   footer .top_footer .foot_left h2 {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
   }
 }
 @media screen and (max-width: 620px) {
   footer .top_footer .foot_left h2 {
-    font-size: 2.1rem;
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 500px) {
