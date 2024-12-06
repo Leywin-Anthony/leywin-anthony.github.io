@@ -813,6 +813,8 @@ main .section_1 .sec1-text .container-btn .btn2 {
   color: var(--text-color);
   -webkit-transform: translateY(-20%);
           transform: translateY(-20%);
+  pointer-events: none;
+  cursor: default;
 }
 .section_3 .card-list .card-item .top-container a .bg-color span {
   font-size: 1rem;
@@ -1121,6 +1123,9 @@ main .section_1 .sec1-text .container-btn .btn2 {
   visibility: visible;
   opacity: 1;
 }
+.section_4 .part_container .conainer P {
+  max-width: 560px;
+}
 
 footer .top_footer {
   display: grid;
@@ -1161,7 +1166,7 @@ footer .top_footer .foot_left .h-line:focus {
 }
 footer .top_footer .foot_left h2 {
   margin: 32px 0;
-  font-size: var(--h2-font);
+  font-size: 3.5rem;
   font-family: "switzer-bold";
   text-transform: capitalize;
   letter-spacing: 2px;

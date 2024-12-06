@@ -36,7 +36,7 @@ window.addEventListener("scroll", () => {
       link.classList.add("activeLink");
     } else if (
       link.getAttribute("href") === "#book" &&
-      scrollValue > 0 &&
+      scrollValue > 0.6 &&
       scrollValue <= 0.75
     ) {
       link.classList.add("activeLink");
