@@ -98,6 +98,11 @@ footer {
         overflow: hidden;
         transition: all 0.7s ease;
 
+        img {
+          height: 39px;
+          width: 39px;
+        }
+
         &:hover {
           transform: scale(0.95);
           filter: brightness(1.75);

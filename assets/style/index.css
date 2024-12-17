@@ -1124,7 +1124,7 @@ main .section_1 .sec1-text .container-btn .btn2 {
   opacity: 1;
 }
 .section_4 .part_container .conainer P {
-  max-width: 560px;
+  max-width: 561px;
 }
 
 footer .top_footer {
@@ -1308,6 +1308,10 @@ footer .mid-footer .is-inview a {
   overflow: hidden;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
+}
+footer .mid-footer .is-inview a img {
+  height: 39px;
+  width: 39px;
 }
 footer .mid-footer .is-inview a:hover {
   -webkit-transform: scale(0.95);
