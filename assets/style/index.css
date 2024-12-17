@@ -236,22 +236,17 @@ nav {
     padding: 20px 5%;
   }
 }
-nav img {
-  margin-top: 30px;
+nav a img {
+  margin-top: 65px;
   height: 40px;
   width: 40px;
 }
 @media screen and (max-width: 1380px) {
-  nav img {
+  nav a img {
     -webkit-transform: scale(1);
             transform: scale(1);
     margin-top: 55px;
   }
-}
-nav .logo {
-  -o-object-fit: contain;
-     object-fit: contain;
-  margin-top: 65px;
 }
 
 header {
