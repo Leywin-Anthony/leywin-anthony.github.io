@@ -248,6 +248,11 @@ nav img {
     margin-top: 55px;
   }
 }
+nav .logo {
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-top: 65px;
+}
 
 header {
   position: relative;
